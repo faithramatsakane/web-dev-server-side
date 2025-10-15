@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ServerSide</title>
+</head>
+<body>
+    <div th:object="${session.user}">
+    <p>Name: <span th:text="*{firstName}">Faith</span>.</p>
+    <p>Surname: <span th:text="*{lastName}">Ramatsakane</span>.</p>
+    <p>Nationality: <span th:text="*{nationality}">South African</span>.</p>
+    </div>
+</body>
+</html>
